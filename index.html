@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <title>アニメーション</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Mochiy+Pop+P+One&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+<body>
+  <main>
+    <section id="secA">
+      <div class="container">
+        <div class="blobs">
+          <div class="liquid"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+          <div class="blob"></div>
+        </div>   
+        <h1 class="text">アイスクリーム</h1>
+      </div>      
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" height="0">
+        <defs>
+          <filter id="goog">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo"/>
+         </filter>
+        </defs>
+      </svg>
+    </section>
+    
+    <section id="secB">
+      <div class="inner">
+        <h1>FAITH-SOL-TECH</h1>
+        <h2 class="span loader"><span class="m">フェ</span><span class="m">イ</span><span class="m">ス</span><span class="m">ソ</span><span class="m">リュ</span><span class="m">ー</span><span class="m">ショ</span><span class="m">ン</span><span class="m"></span><span class="m">テ</span><span class="m">ク</span><span class="m"></span><span class="m">ノ</span><span class="m">ロ</span><span class="m">ジ</span><span class="m">ー</span><span class="m">ズ</span></h2>
+      </div>
+    </section>
+
+  </main>
+  <footer>
+  </footer>
+</body>
+</html>
